@@ -1,0 +1,8 @@
+h1 {
+    color: blue;
+        /*高阶用法，可以用rgba的编号？来选颜色 color:rgba(0, 149, 255, 0.372)*/
+}
+
+#header1 {
+    color: gray;
+}
