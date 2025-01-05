@@ -11,6 +11,7 @@ export const RadioGroup = ({ onChange, selected, children }) => {
     })
   })
 
+  // Render the RadioOptions
   return <div className="RadioGroup">{RadioOptions}</div>;
 };
 
