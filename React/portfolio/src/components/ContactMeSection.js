@@ -44,12 +44,16 @@ const LandingSection = () => {
     if (!response) return;
 
     if (response.type === "success") {
+      // Alert for success
       onOpen(response.type, response.message);
+      // Reset the form on success
       formik.resetForm();
+
     } else if (response.type === "error") {
+      // Alert for error
       onOpen(response.type, response.message);
     }
-  }, [response, onOpen, formik]);
+  }, [response]);
 
   return (
     <FullScreenSection
